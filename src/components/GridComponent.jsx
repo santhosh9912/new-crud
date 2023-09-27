@@ -4,10 +4,10 @@ import profile from '../images/profile.png'
 const GridComponent = () => {
   return (
     <div
-      className="container mx-auto px-4 py-8"
-      style={{ width: "1250px", height: "492px" }}
+      className="container mx-auto px-2 py-8 flex justify-center"
+      style={{ width: "100%", height: "492px" }}
     >
-      <div className="grid grid-cols-2 gap-10">
+      <div className="flex justify-between gap-8 w-[80%] ">
         <div className="col-span-1">
           <h2 className="text-left font-bold text-lg">Testimonials</h2>
           <span className="font-bold text-6xl text-blue-950">

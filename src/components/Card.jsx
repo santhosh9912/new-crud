@@ -30,7 +30,6 @@ const CardList = () => {
   };
 
   const containerStyle = {
-    
     width: "100%",
     display: "flex",
     flexDirection: "row",
@@ -39,12 +38,19 @@ const CardList = () => {
     margin: "0 auto",
     overflow: "hidden",
     paddingTop: "200px"
-    
+  };
+
+  const cardCommonStyle = {
+    width: "210px",
+    margin: "16px",
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // Add box shadow to all cards
+    backgroundColor: "white", // Add background color to all cards
+    borderRadius: "40px",
   };
 
   return (
-    <div style={containerStyle} className="mx-auto max-w-screen-xl px-4">
-      <div className="w-full text-center text-blue-900 font-bold pb-6">
+    <div style={containerStyle} className="mx-auto max-w-screen-xl px-4 py-4">
+      <div className="w-full text-center text-blue-900 font-bold pb-8">
         <h1>CATEGORY</h1>
         <span className="font-medium text-6xl text-blue-950">
           We offer best prices
@@ -54,18 +60,9 @@ const CardList = () => {
         const { title, features } = card;
         const icon = cardIcons[title];
        
-        const cardStyle = {
-          width: "205px",
-          margin: "16px",
-          border: index === 1 ? "2px solid  white" : "none", // Add a border to the second card
-          boxShadow: index === 1 ? "0 4px 6px rgba(0, 0, 0, 0.1)" : "none", // Add a shadow to the second card
-          backgroundColor: index === 1 ? "white" : "transparent", // Set a white background for the second card
-          borderRadius: "40px",
-        };
-
         return (
           <div key={index} >
-            <div className="w-56 h-64  py-15  border rounded-lg overflow-hidden shadow-md mx-auto transition duration-300 transform hover:scale-105 hover:shadow-xl bg-white" style={cardStyle}>
+            <div className="w-56 h-64  py-10  border rounded-lg overflow-hidden shadow-md mx-auto transition duration-300 transform hover:scale-105 hover:shadow-xl bg-white" style={cardCommonStyle}>
               <div className="h-1/2 flex justify-center items-center rounded-t-lg">
                 {icon}
               </div>

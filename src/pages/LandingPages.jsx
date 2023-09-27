@@ -71,7 +71,7 @@ export const LandingPages = () => {
 
 
                <div className="flex justify-start">
-                <button className="bg-yellow-500 hover:bg-black text-white font-bold py-1 px-2 rounded-md">
+                <button className="bg-yellow-500 hover:bg-black text-white font-bold py-3 px-4 rounded-md">
                   Find out more
                 </button>
               </div>

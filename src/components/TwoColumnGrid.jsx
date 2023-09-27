@@ -9,11 +9,11 @@ import People from '../images/People.png'
 export const TwoColumnGrid = () => {
   return (
     <div
-      className="container mx-auto px-4 py-8 mt-10"
-      style={{ width: "1200px", height: "492px" }}
+      className="container mx-auto px-3 py-8 mt-10 flex justify-center items-center"
+      style={{ width: "100%", height: "492px" }}
     >
-      <div className="grid grid-cols-2 gap-10"> {/* Added gap-10 for the gap between columns */}
-        <div className="col-span-1">
+      <div className="flex justify-between gap-4 w-[80%]"> {/* Added gap-10 for the gap between columns */}
+        <div className="col-span-1 ">
           {/* First column */}
           <div className="text-left font-semibold">
             <h3>Easy and Safe</h3>

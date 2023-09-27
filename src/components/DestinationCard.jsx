@@ -27,36 +27,38 @@ const cardsDestinationData = [
 
 export const DestinationCard = () => {
   return (
-    <div className="grid grid-cols-3 gap-4  pt-20  mx-auto max-w-screen-xl px-4"> {/* Adjusted gap-4 */}
-      <div className="col-span-3 text-center text-blue-900 font-bold mb-8">
-        <h1>Top Sellings</h1>
-        <span className="font-medium text-6xl text-blue-950 pb-8">Top Destinations</span>
-      </div>
-      {cardsDestinationData.map((card, index) => (
-        <div key={index} className="col-span-1">
-          <div className="rounded-2xl shadow-lg w-56 h-96 mx-2 transform transition-transform hover:scale-105 overflow-hidden"> {/* Adjusted width and margin */}
-            <div className="w-full h-64 overflow-hidden">
-              <img
-                src={card.imageUrl}
-                alt={`Image of ${card.country}`}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-3 flex flex-col justify-between h-full">
-              <div className="text-gray-500">
-                <div className="flex items-center justify-between">
-                  <h2 className="text-xl font-semibold mb-2">{card.country}</h2>
-                  <span className="text-gray-600 text-lg">$ {card.dollars}</span>
-                </div>
-                <div className="mt-2 flex items-center">
-                  <IoIosSend className="w-6 h-6 mr-2" />
-                  <span className="text-black">{card.days} days travel</span>
+    <div className="container mx-auto px-2 py-5 flex justify-center" style={{ width: "100%" }}>
+      <div className="grid grid-cols-3 gap-6 pt-20 max-w-screen-xl px-10 w-[85%]">
+        <div className="col-span-3 text-center text-blue-900 font-bold mb-8">
+          <h1>Top Sellings</h1>
+          <span className="font-medium text-6xl text-blue-950 pb-8">Top Destinations</span>
+        </div>
+        {cardsDestinationData.map((card, index) => (
+          <div key={index} className="col-span-1 flex justify-center ">
+            <div className="rounded-2xl shadow-lg w-80 h-96 mx-2 p-4 transform transition-transform hover:scale-105 overflow-hidden">
+              <div className="w-full h-64 overflow-hidden">
+                <img
+                  src={card.imageUrl}
+                  alt={`Image of ${card.country}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-3 flex flex-col justify-between h-full">
+                <div className="text-gray-500">
+                  <div className="flex items-center justify-between">
+                    <h2 className="text-xl font-semibold mb-2">{card.country}</h2>
+                    <span className="text-gray-600 text-lg">$ {card.dollars}</span>
+                  </div>
+                  <div className="mt-2 flex items-center">
+                    <IoIosSend className="w-6 h-6 mr-2" />
+                    <span className="text-black">{card.days} days travel</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
