@@ -5,7 +5,7 @@ const GridComponent = () => {
   return (
     <div
       className="container mx-auto px-4 py-8"
-      style={{ width: "1050px", height: "492px" }}
+      style={{ width: "1250px", height: "492px" }}
     >
       <div className="grid grid-cols-2 gap-10">
         <div className="col-span-1">

@@ -17,34 +17,15 @@ import { Footer } from './components/Footer';
 const App = () => {
   return (
     <>
-      <div >
-        <LandingPages />
-      </div>
-
-      <div className=' pt-48'>
-        <CardList />
-      </div>
-
-      <div className='pt-0'>
+      
+        <LandingPages /> 
+        <CardList />      
         <DestinationCard />
-      </div>
-
-      <div className='pt-12'>
-        <TwoColumnGrid />
-      </div>
-
-      <div >
-        <GridComponent/>
-      </div>
-
-      <div>
+       <TwoColumnGrid />
+       <GridComponent/>
         <SubscribeComponent/>
-      </div>
-      <div>
         <Footer/>
-      </div>
-
-
+      
     </>
 
   );

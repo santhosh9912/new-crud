@@ -30,17 +30,20 @@ const CardList = () => {
   };
 
   const containerStyle = {
-    width: "1000px",
+    
+    width: "100%",
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "center",
     margin: "0 auto",
     overflow: "hidden",
+    paddingTop: "200px"
+    
   };
 
   return (
-    <div style={containerStyle}>
+    <div style={containerStyle} className="mx-auto max-w-screen-xl px-4">
       <div className="w-full text-center text-blue-900 font-bold pb-6">
         <h1>CATEGORY</h1>
         <span className="font-medium text-6xl text-blue-950">
@@ -61,8 +64,8 @@ const CardList = () => {
         };
 
         return (
-          <div key={index}>
-            <div className="w-56 h-64 border rounded-lg overflow-hidden shadow-md mx-auto transition duration-300 transform hover:scale-105 hover:shadow-xl bg-white" style={cardStyle}>
+          <div key={index} >
+            <div className="w-56 h-64  py-15  border rounded-lg overflow-hidden shadow-md mx-auto transition duration-300 transform hover:scale-105 hover:shadow-xl bg-white" style={cardStyle}>
               <div className="h-1/2 flex justify-center items-center rounded-t-lg">
                 {icon}
               </div>

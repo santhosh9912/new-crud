@@ -27,14 +27,14 @@ const cardsDestinationData = [
 
 export const DestinationCard = () => {
   return (
-    <div className="grid grid-cols-3 gap-1 mx-32 pt-20 px-2">
-      <div className="col-span-3 text-center text-blue-900 font-bold mb-8"> {/* Added mb-8 for padding */}
+    <div className="grid grid-cols-3 gap-4  pt-20  mx-auto max-w-screen-xl px-4"> {/* Adjusted gap-4 */}
+      <div className="col-span-3 text-center text-blue-900 font-bold mb-8">
         <h1>Top Sellings</h1>
         <span className="font-medium text-6xl text-blue-950 pb-8">Top Destinations</span>
       </div>
       {cardsDestinationData.map((card, index) => (
         <div key={index} className="col-span-1">
-          <div className="rounded-2xl shadow-lg w-52 h-96 mx-2 transform transition-transform hover:scale-105 overflow-hidden">
+          <div className="rounded-2xl shadow-lg w-56 h-96 mx-2 transform transition-transform hover:scale-105 overflow-hidden"> {/* Adjusted width and margin */}
             <div className="w-full h-64 overflow-hidden">
               <img
                 src={card.imageUrl}

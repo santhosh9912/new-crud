@@ -3,8 +3,8 @@ import send from '../images/Group 77.png'
 
 export const SubscribeComponent = () => {
   return (
-    <div className="container mx-auto px-4 py-5 relative flex justify-center items-center -mt-10">
-      <div className="max-w-2xl rounded-tl-top-left rounded-2xl shadow-lg bg-gray-100 relative" style={{ width: "2000px", height: "220px" }}>
+    <div className="container mx-auto max-w-screen-xl px-8 py-5 relative flex justify-center items-center -mt-10">
+      <div className="max-w-3xl rounded-tl-top-left rounded-2xl shadow-lg bg-gray-100 relative -ml-11" style={{ width: "2500px", height: "220px" }}>
         <div className="px-24 py-8 flex flex-col items-center">
           {/* Image in the top right corner */}
           <img

@@ -9,8 +9,8 @@ import People from '../images/People.png'
 export const TwoColumnGrid = () => {
   return (
     <div
-      className="container mx-auto px-4 py-8"
-      style={{ width: "1043px", height: "492px" }}
+      className="container mx-auto px-4 py-8 mt-10"
+      style={{ width: "1200px", height: "492px" }}
     >
       <div className="grid grid-cols-2 gap-10"> {/* Added gap-10 for the gap between columns */}
         <div className="col-span-1">
