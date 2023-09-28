@@ -37,7 +37,7 @@ const CardList = () => {
     justifyContent: "center",
     margin: "0 auto",
     overflow: "hidden",
-    paddingTop: "200px"
+    
   };
 
   const cardCommonStyle = {
@@ -49,7 +49,7 @@ const CardList = () => {
   };
 
   return (
-    <div style={containerStyle} className="mx-auto max-w-screen-xl px-4 py-4">
+    <div style={containerStyle} className="mx-auto max-w-screen-xl px-4 py-4 -top-28">
       <div className="w-full text-center   pb-8">
         <h1 className="font-bold text-gray-500 text-xl py-8" style={{fontFamily:'Open Sans'}}>CATEGORY</h1>
         <span className="font-bold  text-blue-950 text-6xl -pt-2 " style={{fontFamily: 'Volkhov'}}>
