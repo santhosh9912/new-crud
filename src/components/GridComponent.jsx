@@ -4,7 +4,7 @@ import profile from '../images/profile.png'
 const GridComponent = () => {
   return (
     <div
-      className="container mx-auto px-2 py-8 flex justify-center"
+      className="container mx-auto px-2 py-14 flex justify-center "
       style={{ width: "100%", height: "492px" }}
     >
       <div className="flex justify-between gap-8 w-[80%] ">
