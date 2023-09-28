@@ -21,7 +21,7 @@ const GridComponent = () => {
         {/* Second column */}
         <div className="col-span-1 relative">
           {/* Centered card */}
-          <div className="max-w-lg rounded-3xl shadow-2xl shadow-stone-600 p-9 flex flex-col items-center relative">
+          <div className="max-w-lg rounded-3xl shadow-xl shadow-black p-9 flex flex-col items-center relative">
             {/* Image in the top-left corner */}
             <div className="absolute -top-4 -left-7 w-12 h-12  rounded-full ">
               <img

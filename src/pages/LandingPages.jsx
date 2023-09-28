@@ -13,10 +13,10 @@ export const LandingPages = () => {
     <div className="px-44 py-6">
       <div className="flex items-center justify-between">
         <div style={{ fontFamily: "Poppins , sans-serif", fontSize: "20px" }}>
-          <img src={logo} alt="" width={100} />
+          <img src={logo} alt="" width={98} />
         </div>
 
-        <div className="flex items-center space-x-12">
+        <div className="flex items-center space-x-12" style={{fontFamily:'Open Sans'}}>
           <a href="#" className="font-semibold">
             Destination
           </a>
