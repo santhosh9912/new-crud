@@ -1,13 +1,19 @@
 import React from "react";
-import logo from "../images/logos.jpg";
-import travel from '../images/Traveller.png'
+import logo from "../images/WedTech.png";
+import travel from "../images/Traveller.png";
 
 export const LandingPages = () => {
+  const textStyle = {
+    fontFamily: "Poppins, sans-serif", // Use the font-family name "Poppins"
+    fontWeight: "extrabold", // Apply font weight if needed
+    fontSize: "2rem", // Customize font size as desired
+  };
+
   return (
     <div className="px-44 py-6">
-      <div className="flex item-center justify-between">
-        <div>
-          <img src={logo} alt="" width={50} />
+      <div className="flex items-center justify-between">
+        <div style={{ fontFamily: "Poppins , sans-serif", fontSize: "20px" }}>
+          <img src={logo} alt="" width={100} />
         </div>
 
         <div className="flex items-center space-x-12">
@@ -54,33 +60,48 @@ export const LandingPages = () => {
         </div>
       </div>
       <div className="pt-48 flex items-center">
-        <div className="w-[450px] ">
+        <div className="w-[600px] ">
           <div className="grid gap-4">
-            <div className="grid gap-4">
-              <span className="text-red-700 font-extrabold text-2xl">
-                Best Destination around the world
-              </span>
-              <span className="font-bold text-6xl text-blue-950">
-                Travel ,enjoy and live a new and full life
-              </span>
-              <p className="font-serif rgba(94, 98, 130, 1)">
+            <div className="grid gap-4 p-2">
+              <div className="mb-4">
+                <span
+                  className="font-bold text-xl text-red-700"
+                  style={textStyle}
+                >
+                  Best Destination around the world
+                </span>
+              </div>
+              <div className="mb-4" >
+                <span
+                  className="font-bold text-6xl text-blue-950"
+                  style={{ fontFamily: "Volkhov, serif" }}
+                >
+                  Travel, enjoy and live a new and full life
+                </span>
+              </div>
+              <p
+                className="text-gray-500 font-semibold text-xl"
+                style={{ fontFamily: "Poppins" }}
+              >
                 Built wicket longer admire do barton vanity itself go in it
                 Preffered to sportsmen it engrossed listening.Park gate sell
                 they west hard for the
               </p>
 
-
-               <div className="flex justify-start">
-                <button className="bg-yellow-500 hover:bg-black text-white font-bold py-3 px-4 rounded-md">
+              <div className="flex justify-start">
+                <button
+                  className="bg-yellow-500 hover:bg-black text-white font-semibold py-3 px-5 rounded-md"
+                  style={{ fontSize: "18px" }}
+                >
                   Find out more
                 </button>
               </div>
             </div>
           </div>
         </div>
-            <div className="absolute top-24 right-14">
-                <img src={travel} alt=""/>
-            </div>
+        <div className="absolute top-24 right-2">
+          <img src={travel} alt="" />
+        </div>
       </div>
     </div>
   );

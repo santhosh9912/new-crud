@@ -50,9 +50,9 @@ const CardList = () => {
 
   return (
     <div style={containerStyle} className="mx-auto max-w-screen-xl px-4 py-4">
-      <div className="w-full text-center text-blue-900 font-bold pb-8">
-        <h1>CATEGORY</h1>
-        <span className="font-medium text-6xl text-blue-950">
+      <div className="w-full text-center   pb-8">
+        <h1 className="font-bold text-gray-500 text-xl py-8" style={{fontFamily:'Open Sans'}}>CATEGORY</h1>
+        <span className="font-bold  text-blue-950 text-6xl -pt-2 " style={{fontFamily: 'Volkhov'}}>
           We offer best prices
         </span>
       </div>
@@ -67,10 +67,10 @@ const CardList = () => {
                 {icon}
               </div>
               <div className="h-1/2 p-4 rounded-b-md flex flex-col justify-center items-center">
-                <h3 className="text-xl font-semibold mb-2 text-center text-blue-900">{title}</h3>
+                <h3 className="text-xl font-semibold mb-2 text-center text-blue-900" style={{fontFamily:"Open sans"}}>{title}</h3>
                 <ul className="list-none p-0 text-center text-blue-900">
                   {features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
+                    <li key={index} style={{fontFamily:'Poppins'}}>{feature}</li>
                   ))}
                 </ul>
               </div>

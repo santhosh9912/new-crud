@@ -12,12 +12,12 @@ export const SubscribeComponent = () => {
             alt="Image"
             className="absolute -top-4 -right-8 w-16 h-16 rounded-full border-2 border-white z-10"
           />
-          <p className="text-blue-950 text-inherit pt-11 font-bold text-xl ">
+          <p className="text-slate-700  pt-11 font-semibold text-xl " style={{fontFamily:'Poppins'}}>
             Subscribe to get information, latest news, and other interesting offers about Cobham
           </p>
           <div className="mt-4 flex items-center">
             <input
-              className="border rounded py-2 px-3 mr-2 w-3/4"
+              className="border rounded py-2 px-3 mr-2 w-3/4 text-slate-600"
               type="text"
               placeholder="Your mail"
               name="mail"
