@@ -4,7 +4,7 @@ import send from '../images/Group 77.png'
 export const SubscribeComponent = () => {
   return (
     <div className="container mx-auto max-w-screen-2xl px-8 py-5 relative flex justify-center items-center -mt-10">
-      <div className="max-w-4xl rounded-tl-top-left rounded-2xl shadow-lg shadow-stone-600 bg-gray-100 relative -ml-11" style={{ width: "2500px", height: "260px" }}>
+      <div className="max-w-4xl rounded-tl-top-left rounded-2xl shadow-lg shadow-stone-600 bg-gray-100 relative -ml-11" style={{ width: "2500px", height: "280px" }}>
         <div className="px-24 py-8 flex flex-col items-center">
           {/* Image in the top right corner */}
           <img
