@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../images/WedTech.png";
 import travel from "../images/Traveller.png";
+import { FaBars } from "react-icons/fa";
 
 export const LandingPages = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,14 +26,7 @@ export const LandingPages = () => {
         {/* Mobile Menu */}
         <div className="md:hidden">
           <button onClick={toggleMenu}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
+          <FaBars size={24} />
               {menuOpen ? (
                 <path
                   strokeLinecap="round"
@@ -46,7 +40,7 @@ export const LandingPages = () => {
                   d="M4 6h16M4 12h16m-7 6h7"
                 />
               )}
-            </svg>
+           
           </button>
         </div>
 
