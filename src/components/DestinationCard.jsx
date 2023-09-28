@@ -35,7 +35,7 @@ export const DestinationCard = () => {
         </div>
         {cardsDestinationData.map((card, index) => (
           <div key={index} className="col-span-1 flex justify-center ">
-            <div className="rounded-2xl shadow-lg w-80 h-96 mx-2 p-4 transform transition-transform hover:scale-105 overflow-hidden">
+            <div className="rounded-2xl shadow-2xl shadow-gray-500 w-80 h-96 mx-2 p-4 transform transition-transform hover:scale-105 overflow-hidden">
               <div className="w-full h-64 overflow-hidden">
                 <img
                   src={card.imageUrl}

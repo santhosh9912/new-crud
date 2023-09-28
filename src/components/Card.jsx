@@ -43,7 +43,7 @@ const CardList = () => {
   const cardCommonStyle = {
     width: "210px",
     margin: "16px",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // Add box shadow to all cards
+    boxShadow: "0 10px 14px rgba(0, 0, 0, 0.2)", // Add box shadow to all cards
     backgroundColor: "white", // Add background color to all cards
     borderRadius: "40px",
   };
@@ -62,8 +62,8 @@ const CardList = () => {
        
         return (
           <div key={index} >
-            <div className="w-56 h-64  py-10  border rounded-lg overflow-hidden shadow-md mx-auto transition duration-300 transform hover:scale-105 hover:shadow-xl bg-white" style={cardCommonStyle}>
-              <div className="h-1/2 flex justify-center items-center rounded-t-lg">
+            <div className="w-56 h-64  py-10  border rounded-lg overflow-hidden  mx-auto transition duration-300 transform hover:scale-105 hover:shadow-xl bg-white" style={cardCommonStyle}>
+              <div className="h-1/2 flex justify-center items-center rounded-t-lg ">
                 {icon}
               </div>
               <div className="h-1/2 p-4 rounded-b-md flex flex-col justify-center items-center">

@@ -58,7 +58,7 @@ export const TwoColumnGrid = () => {
         <div className="col-span-1 pl-20">
           {/* Second column */}
           <div
-            className="w-370 h-300 border rounded-2xl shadow-sky-500 shadow-2xl overflow-hidden p-4" // Added p-4 for padding
+            className="w-370 h-300 border rounded-xl shadow-sky-800 shadow-2xl overflow-hidden p-4" // Added p-4 for padding
             style={{ width: "300px", height: "320px" }} // Adjust the height here
           >
             <img
