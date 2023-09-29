@@ -12,6 +12,10 @@ export const LandingPages = () => {
     fontSize: "2rem",
   };
 
+  const singleLineText = {
+    whiteSpace: "nowrap", // Add this CSS property
+  };
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -26,21 +30,20 @@ export const LandingPages = () => {
         {/* Mobile Menu */}
         <div className="md:hidden">
           <button onClick={toggleMenu}>
-          <FaBars size={24} />
-              {menuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              )}
-           
+            <FaBars size={24} />
+            {menuOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            )}
           </button>
         </div>
 
@@ -138,7 +141,7 @@ export const LandingPages = () => {
           <div className="grid gap-4">
             <div className="grid gap-4 p-2">
               <div className="mb-4">
-                <span className="font-bold text-xl text-red-700" style={textStyle}>
+                <span className="font-bold text-2xl text-red-700" style={singleLineText}>
                   Best Destination around the world
                 </span>
               </div>
